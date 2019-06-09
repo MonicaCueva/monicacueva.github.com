@@ -144,6 +144,7 @@ h2, h3, h4, p {
 	list-style: circle;
 }
 
+
 @media screen and (max-width: 649px) {
 
 	img {
