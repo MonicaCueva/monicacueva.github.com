@@ -169,5 +169,11 @@ h2, h3, h4, p {
 		padding: 0;
 	}
 
-
+	.folio {
+		margin: 10px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
 }
