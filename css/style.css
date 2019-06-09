@@ -4,13 +4,34 @@ body {
 
 h1, h2, h3, h4, p, li {
 	color: #086b6c;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+p, li{
+	font-size: 18px;
 }
 
 hr.separador {
   border-top: 4px solid #0e9091;
 }
 
-h3, p {
+h2, h3, h4, p {
 	margin: 4px;
 }
 
@@ -49,7 +70,7 @@ h3, p {
 
 .informacion {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -60,33 +81,67 @@ h3, p {
 
 .experiencia {
 	grid-column: 2;
-	grid-row: 1;
+	grid-row: 1/3;
 }
 
 .certificaciones {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.tecnologias {
 	grid-column: 1;
 	grid-row: 2;
 }
 
-.tecnologias {
-	grid-column: 2;
-	grid-row: 2;
-}
-
 .aptitudes {
-	grid-column: 1 / 3;
-	grid-row: 3;
+	grid-column: 3;
+	grid-row: 2;
 }
 
 .informacion section {
 	margin: 10px;
 }
 
+.informacion section {
+	display: flex; 
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
 .informacion section h2 {
+	text-align: center;
 	background-color: #0e9091;
 	color: white;
 	border-radius: 20px; 
 	border: 10px #0e9091 solid;
+}
+
+.informacion section h3 {
+	color: #1ecfd0;
+}
+
+.departamento {
+	text-align: center;
+}
+
+.educacion li,  .experiencia li{
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.educacion h3, .educacion h4, 
+.experiencia h3, .experiencia h4 {
+	text-align: center;
+}
+
+.lista_soporte li{
+	list-style: disc;
+}
+
+.lista_soporte li ul li{
+	list-style: circle;
 }
 
 @media screen and (max-width: 649px) {
@@ -95,5 +150,19 @@ h3, p {
 		height: 150px;
 		width: 150px;
 	}
+
+	.informacion {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+
+	.informacion section, .informacion section ul {
+		margin: 0;
+		padding: 0;
+	}
+
 
 }
