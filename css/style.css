@@ -1,0 +1,49 @@
+body {
+	background-color: #0e9091;
+}
+
+h1, h2, h3, h4, p, li {
+	color: #086b6c;
+}
+
+hr.separador {
+  border-top: 4px solid #0e9091;
+}
+
+h3, p {
+	margin: 4px;
+}
+
+.folio {
+	padding: 20px;
+	margin: 50px;
+	background-color: white;
+}
+
+.cabecera {
+	text-align: center;
+}
+
+.perfil, .datos_personales, .informacion {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.datos_personales {
+	list-style: none; 
+  	padding: 0;
+  	margin: 0;
+}
+
+.datos_personales, .informacion {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.datos_personales li {
+	margin: 10px;
+}
+
