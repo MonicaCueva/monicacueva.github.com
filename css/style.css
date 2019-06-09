@@ -24,7 +24,7 @@ h3, p {
 	text-align: center;
 }
 
-.perfil, .datos_personales, .informacion {
+.perfil, .datos_personales {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -38,13 +38,55 @@ h3, p {
   	margin: 0;
 }
 
-.datos_personales, .informacion {
+.datos_personales {
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .datos_personales li {
 	margin: 10px;
+}
+
+.informacion {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.formacion {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.experiencia {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.certificaciones {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.tecnologias {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.aptitudes {
+	grid-column: 1 / 3;
+	grid-row: 3;
+}
+
+.informacion section {
+	margin: 10px;
+}
+
+.informacion section h2 {
+	background-color: #0e9091;
+	color: white;
+	border-radius: 20px; 
+	border: 10px #0e9091 solid;
 }
 
 @media screen and (max-width: 649px) {
