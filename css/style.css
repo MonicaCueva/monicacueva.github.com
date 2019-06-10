@@ -1,10 +1,18 @@
 body {
-	background-color: #0e9091;
+	background-color: #085f63;
 }
 
 h1, h2, h3, h4, p, li {
-	color: #086b6c;
+	color: #085f63;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+	color: #085f63;
+}
+
+ h3 {
+	color: #facf5a;
 }
 
 label {
@@ -31,8 +39,16 @@ p, li{
 	font-size: 18px;
 }
 
+a {
+	color: #085f63;
+}
+
+a:hover {
+	color: #facf5a;
+}
+
 hr.separador {
-  border-top: 4px solid #0e9091;
+  border-top: 4px solid #facf5a;
 }
 
 h2, h3, h4, p {
@@ -40,8 +56,11 @@ h2, h3, h4, p {
 }
 
 .folio {
-	padding: 20px;
-	margin: 50px;
+	padding: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 15%;
+	margin-right: 15%;
 	background-color: white;
 }
 
@@ -116,15 +135,13 @@ h2, h3, h4, p {
 
 .informacion section h2 {
 	text-align: center;
-	background-color: #0e9091;
+	background-color: #085f63;
 	color: white;
 	border-radius: 20px; 
-	border: 10px #0e9091 solid;
+	border: 10px #085f63 solid;
 }
 
-.informacion section h3 {
-	color: #1ecfd0;
-}
+
 
 .departamento {
 	text-align: center;
@@ -147,7 +164,6 @@ h2, h3, h4, p {
 .lista_soporte li ul li{
 	list-style: circle;
 }
-
 
 @media screen and (max-width: 649px) {
 
