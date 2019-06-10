@@ -68,7 +68,7 @@ h2, h3, h4, p {
 	text-align: center;
 }
 
-.perfil, .datos_personales {
+.perfil, .datos_personales, .aficiones ul, .aficiones ul li {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -122,6 +122,11 @@ h2, h3, h4, p {
 	grid-row: 2;
 }
 
+.aficiones {
+	grid-column: 1/4;
+	grid-row: 3;
+}
+
 .informacion section {
 	margin: 10px;
 }
@@ -165,6 +170,28 @@ h2, h3, h4, p {
 	list-style: circle;
 }
 
+.aficiones h2{
+	text-align: center;
+	margin-top: 40px;
+}	
+	
+.aficiones ul{
+	flex-direction: row;
+	list-style: none;
+}
+
+.aficiones ul li {
+	margin: 50px;
+}
+
+.aficiones ul li label{
+	text-decoration: none;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
 @media screen and (max-width: 649px) {
 
 	img {
@@ -180,9 +207,13 @@ h2, h3, h4, p {
 	}
 	
 
-	.informacion section, .informacion section ul {
+	.informacion section {
 		margin: 0;
 		padding: 0;
+	}
+
+	.informacion section ul {
+		padding: 10px;
 	}
 
 	.folio {
@@ -192,4 +223,19 @@ h2, h3, h4, p {
 	h1 {
 		text-align: center;
 	}
+	
+	.informacion img, .aficiones img {
+		height: 64px;
+		width: 64px;
+	}
+	
+	.aficiones ul{
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.aficiones ul li {
+		margin: 10px;
+	}
+
 }
