@@ -1,5 +1,6 @@
 body {
 	background-color: #085f63;
+	background-image: url("../img/mesa.jpeg");
 }
 
 h1, h2, h3, h4, p, li {
@@ -41,10 +42,6 @@ p, li{
 
 a {
 	color: #085f63;
-}
-
-a:hover {
-	color: #facf5a;
 }
 
 hr.separador {
@@ -192,8 +189,14 @@ h2, h3, h4, p {
 }
 
 
-@media screen and (max-width: 649px) {
+@media screen and (min-width: 1024px) {
+	a:hover {
+		color: #facf5a;
+	}
+}
 
+@media screen and (max-width: 950px) {
+	
 	img {
 		height: 150px;
 		width: 150px;
@@ -217,7 +220,7 @@ h2, h3, h4, p {
 	}
 
 	.folio {
-		margin: 10px;
+		margin: 5%;
 	}
 	
 	h1 {
