@@ -201,7 +201,7 @@ h2, h3, h4, p {
 @media screen and (max-width: 950px) {
 	
 	img {
-		height: 150px;
+		/* height: 150px; */
 		width: 150px;
 	}
 
@@ -245,6 +245,3 @@ h2, h3, h4, p {
 	}
 
 }
-
-
-
