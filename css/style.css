@@ -191,7 +191,6 @@ h2, h3, h4, p {
 	padding: 4px;
 }
 
-
 @media screen and (min-width: 1024px) {
 	a:hover {
 		color: #facf5a;
@@ -201,7 +200,7 @@ h2, h3, h4, p {
 @media screen and (max-width: 950px) {
 	
 	img {
-		/* height: 150px; */
+		height: 150px; 
 		width: 150px;
 	}
 
